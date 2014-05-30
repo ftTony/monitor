@@ -8,8 +8,62 @@
 </head>
 
 <body>
+    <img src="./jartto.png">
     <script>
-        
+        // 同步
+        // window.onerror = function (message, source, lineno, colno, error) {
+        //     // message：错误信息（字符串）。
+        //     // source：发生错误的脚本URL（字符串）
+        //     // lineno：发生错误的行号（数字）
+        //     // colno：发生错误的列号（数字）
+        //     // error：Error对象（对象）
+        //     console.log('捕获到异常：', {
+        //         message,
+        //         source,
+        //         lineno,
+        //         colno,
+        //         error
+        //     });
+        // }
+        // Jartto;
+
+        // 语法错误
+        // window.onerror = function (message, source, lineno, colno, error) {
+        //     console.log('捕获到异常：', {
+        //         message,
+        //         source,
+        //         lineno,
+        //         colno,
+        //         error
+        //     });
+        // }
+        // let name = 'Jartto
+
+        // 异步运行时错误
+        // window.onerror = function (message, source, lineno, colno, error) {
+        //     console.log('捕获到异常：', {
+        //         message,
+        //         source,
+        //         lineno,
+        //         colno,
+        //         error
+        //     });
+        // }
+        // setTimeout(() => {
+        //     Jartto;
+        // });
+
+        // 网络请求异常情况
+        window.onerror = function (message, source, lineno, colno, error) {
+            console.log('捕获到异常：', {
+                message,
+                source,
+                lineno,
+                colno,
+                error
+            });
+            return true;
+        }
     </script>
 </body>
 
