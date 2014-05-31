@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <img src="./jartto.png">
+    <!-- <img src="./jartto.png"> -->
     <script>
         // 同步
         // window.onerror = function (message, source, lineno, colno, error) {
@@ -40,20 +40,6 @@
         // let name = 'Jartto
 
         // 异步运行时错误
-        // window.onerror = function (message, source, lineno, colno, error) {
-        //     console.log('捕获到异常：', {
-        //         message,
-        //         source,
-        //         lineno,
-        //         colno,
-        //         error
-        //     });
-        // }
-        // setTimeout(() => {
-        //     Jartto;
-        // });
-
-        // 网络请求异常情况
         window.onerror = function (message, source, lineno, colno, error) {
             console.log('捕获到异常：', {
                 message,
@@ -62,8 +48,22 @@
                 colno,
                 error
             });
-            return true;
         }
+        setTimeout(() => {
+            Jartto;
+        });
+
+        // 网络请求异常情况
+        // window.onerror = function (message, source, lineno, colno, error) {
+        //     console.log('捕获到异常：', {
+        //         message,
+        //         source,
+        //         lineno,
+        //         colno,
+        //         error
+        //     });
+        //     return true;
+        // }
     </script>
 </body>
 
